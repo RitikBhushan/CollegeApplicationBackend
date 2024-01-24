@@ -39,7 +39,7 @@ app.use("/profile", authenticateToken);
 
 // Routes
 app.use("/auth", authRoutes);
-app.use("/events", eventRoutes);
+app.use("/event", eventRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
