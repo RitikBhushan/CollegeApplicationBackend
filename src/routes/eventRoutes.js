@@ -12,4 +12,7 @@ router.get("/", eventController.getEvents);
 // Get event details by event ID
 router.get("/:eventId", eventController.getEventById);
 
+// Delete event by ID
+router.delete("/:eventId", eventController.deleteEventById);
+
 module.exports = router;
