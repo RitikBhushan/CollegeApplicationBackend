@@ -2,11 +2,10 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const jwt = require("jsonwebtoken");
-const authRoutes = require("./routes/authRoutes");
-const eventRoutes = require("./routes/eventRoutes");
-const fileUpload = require("express-fileupload");
+const authRoutes = require("./src/routes/authRoutes");
+const eventRoutes = require("./src/routes/eventRoutes");
 const PORT = process.env.PORT || 3000;
-const connectDB = require("./config/db");
+const connectDB = require("./src/config/db");
 
 // app.use(
 //   fileUpload({
